@@ -1,0 +1,4 @@
+# Queries
+
+UPDATE assesment_rating SET rating = CASE order_number WHEN '1' THEN 5 WHEN '2' THEN 2 END WHERE interview_assessment_id = 
+(SELECT id FROM interview_assesment WHERE interview_schedule_id = 2896);
