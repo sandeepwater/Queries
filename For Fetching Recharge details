@@ -1,0 +1,5 @@
+# Queries
+
+SELECT * from employer_transaction_history where company_id=12 and entity_type='employer_to_a2_payment';
+
+SELECT amount,available_balance,created from employer_transaction_history where company_id=135 and entity_type='employer_to_a2_payment' and (created >= '2022-04-05 18:01:50.000000' AND created <= '2022-09-19 08:56:58.000000');
